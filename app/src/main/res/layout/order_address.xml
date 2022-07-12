@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:hint=" Address"
+                android:inputType="text"
+                android:text=""
+                android:textColorHint="@color/colorPrimary"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <RadioButton
+                    android:id = "@+id/rdiShipToAddress"
+                    android:text="Ship To This Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id = "@+id/rdiHomeAddress"
+                    android:text = "Home Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+            </RadioGroup>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id = "@+id/edtpay"
+                android:text = " Payment Method"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_margin="2dp"
+                app:met_baseColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <RadioButton
+                    android:id = "@+id/rdiCashOnDelivery"
+                    android:text="Cash On Delivery"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id = "@+id/rdiPayNow"
+                    android:text = "Pay Now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pay Using Upi"></RadioButton>
+
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Net Banking"
+                   ></RadioButton>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
